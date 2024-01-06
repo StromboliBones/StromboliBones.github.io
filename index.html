@@ -7,205 +7,215 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="styles.css">
 </head>
-<body id="main">
-    <nav class="col-md-12 d-md-block sticky-top" id="nav-wrapper">
-        <ul class="nav flex">
-            <li class="nav-item">
-                <a class="btn btn-secondary" href="#main">Introduction</a>
-            </li>
-            <li class="nav-item">
-                <a href="https://tinyurl.com/Strombolibones" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">Download</a>
-            </li>
-            <li class="nav-item">
-                <a href="https://ifdb.fanedit.org/hobbit-the-battle-of-the-five-edits-the/" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">IFDB Listing</a>
-            </li>
-            <li class="nav-item dropdown">
-                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
-                    A Shortcut to Mushrooms
-                </button>
-                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                    <li>
-                        <a href="#chapter-an-unexpected-journey" class="dropdown-item">An Unexpected Journey</a>
-                    </li>
-                    <li>
-                        <a href="#chapter-riddles-in-the-dark" class="dropdown-item">Riddles in the Dark</a>
-                    </li>
-                    <li>
-                        <a href="#chapter-a-warm-welcome" class="dropdown-item">A Warm Welcome</a>
-                    </li>
-                    <li>
-                        <a href="#chapter-fire-and-water" class="dropdown-item">Fire and Water</a>
-                    </li>
-                    <li>
-                        <a href="#chapter-there-and-back-again" class="dropdown-item">There and Back Again</a>
-                    </li>
-                </ul>
-            </li>
-            <li class="nav-item">
-                <a href="#section-a-bit-about-us" class="btn btn-secondary">A Bit About Us</a>
-            </li>
-            <div class="nav-item">
-                <a href="#section-satisfaction-guaranteed" class="btn btn-secondary">Guarantee</a>
-            </div>
-        </ul>
-    </nav>
-    <div class="container-fluid">
-        <div class="row">
-            <main class="col-md-12 ms-sm-auto">
-                <!-- Introduction -->
-                <section id="section-intro" class="row">
-                    <div class="col-md-6 text-content">
+<body id="main" class="container-fluid">
+    <div class="d-flex" style="width: 70%; margin: 0 auto;">
+        <nav class="col-md-3 d-md-block" id="nav-primary">
+            <ul class="nav flex-column">
+                <li class="nav-item">
+                    <a href="#main" class="nav-link">Introduction</a>
+                </li>
+                <li class="nav-item">
+                    <a href="https://tinyurl.com/Strombolibones" target="_blank" rel="noopener noreferrer" class="nav-link">Download</a>
+                </li>
+                <li class="nav-item">
+                    <a href="https://ifdb.fanedit.org/hobbit-the-battle-of-the-five-edits-the/" target="_blank" rel="noopener noreferrer" class="nav-link">
+                        IFDB Listing
+                    </a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a href="#a-shortcut-to-mushrooms" class="nav-link">Sections</a>
+                    <ul class="nav subnav flex-column">
+                        <li>
+                            <a href="#chapter-an-unexpected-journey" class="nav-link">1. An Unexpected Journey</a>
+                        </li>
+                        <li>
+                            <a href="#chapter-riddles-in-the-dark" class="nav-link">2. Riddles in the Dark</a>
+                        </li>
+                        <li>
+                            <a href="#chapter-a-warm-welcome" class="nav-link">3. A Warm Welcome</a>
+                        </li>
+                        <li>
+                            <a href="#chapter-fire-and-water" class="nav-link">4. Fire and Water</a>
+                        </li>
+                        <li>
+                            <a href="#chapter-there-and-back-again" class="nav-link">5. There and Back Again</a>
+                        </li>
+                    </ul>
+                </li>
+                
+                <!-- <li class="nav-item">
+                    <a href="#section-a-bit-about-us" class="nav-link">A Bit About Us</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#section-satisfaction-guaranteed" class="nav-link">Guarantee</a>
+                </li> -->
+            </ul>
+        </nav>
+        <div class="col-md-9">
+            <div class="d-flex">
+                <main class="col-md-12 ms-sm-auto" style="padding-top: 20px;">
+                    <!-- Banner -->
+                    <section id="section-header" class="d-flex narrow-margin">
                         <hgroup>
                             <h1>The Hobbit: The Battle of the Five Edits</h1>
                             <h2>One Edit to Rule Them All</h2>
                         </hgroup>
-                        <p>The Hobbit: The Battle of the Five Edits is a reimagining of Peter Jackson's Film Trilogy.</p>
-                        <p>A Five-Hour Miniseries that aims to remove the bloat contained within The Hobbit films and improve the quality of the viewer's experience.</p>
-                        <p>Comprised of elements from many of the other Hobbit-Edits out there, as well as my own contributions to the content and structure of the original films, this edit represents Three Years, and thousands of hours of dedication to making The Hobbit films as enjoyable as possible, to as many people as possible.</p>
-                    </div>
-                    <div class="col-md-6">
-                        <img src="images/front.jpg" alt="" class="w-100">
-                    </div>
-                </section>
+                    </section>
 
-                <!--A Shortcut To Mushrooms-->
-                <section id="section-a-shortcut-to-mushrooms" class="row">
-                    <hgroup>
-                        <h1>A Shortcut to Mushrooms</h1>
-                        <h2>⚠️ WARNING - CONTAINS SPOILERS ⚠️</h2>
-                    </hgroup>
-
-                    <!-- An Unexpected Journey-->    
-                    <div class="row chapter" id="chapter-an-unexpected-journey">
-                        <div class="col-md-6 chapter-image">
-                            <img src="images/partImages/part_1__an_unexpected_journey__poster.png" alt="An Unexpected Journey">
+                    <!-- Introduction -->
+                    <section id="section-intro" class="d-flex">
+                        <div class="col-md-6 text-content">
+                            <p>The Hobbit: The Battle of the Five Edits is a reimagining of Peter Jackson's Film Trilogy.</p>
+                            <p>A Five-Hour Miniseries that aims to remove the bloat contained within The Hobbit films and improve the quality of the viewer's experience.</p>
+                            <p>Comprised of elements from many of the other Hobbit-Edits out there, as well as my own contributions to the content and structure of the original films, this edit represents Three Years, and thousands of hours of dedication to making The Hobbit films as enjoyable as possible, to as many people as possible.</p>
                         </div>
-                        <div class="col-md-6 chapter-items">
-                            <h3>An Unexpected Journey</h3>
-                            <ul>
-                                <li>Runtime - 53:29</li>
-                                <li>No Prologue/Flashbacks</li>
-                                <li>No Radagast</li>
-                                <li>No Orc/Warg Chase</li>
-                                <li>No Azog</li>
-                            </ul>
+                        <div class="col-md-6">
+                            <img src="images/front.jpg" alt="" class="w-100">
                         </div>
-                    </div>
-
-                    <!-- Riddles In The Dark-->
-                    <div class="row chapter" id="chapter-riddles-in-the-dark">
-                        <div class="col-md-6 chapter-image">
-                            <img src="images/partImages/part_2__riddles_in_the_dark__poster.png" alt="Riddles in the Dark">
-                        </div>
-                        <div class="col-md-6 chapter-items">
-                            <h3>Riddles in the Dark</h3>
-                            <ul>
-                                <li>Runtime - 52:42</li>
-                                <li>Restructured Rivendell</li>
-                                <li>No Saruman</li>
-                                <li>No Storm Giants</li>
-                                <li>Less Goblin-Tunnels</li>
-                                <li>Minimal Songs</li>
-                                <li>No Azog</li>
-                            </ul>
-                        </div>
-                    </div>
-
-                    <!-- A Warm Welcome -->
-                    <div class="row chapter" id="chapter-a-warm-welcome">
-                        <div class="col-md-6 chapter-image">
-                            <img src="images/partImages/part_3__a_warm_welcome__poster.png" alt="A Warm Welcome">
-                        </div>
-                        <div class="col-md-6 chapter-items">
-                            <h3>A Warm Welcome</h3>
-                            <ul>
-                                <li>Runtime - 1:01:05</li>
-                                <li>No Azog</li>
-                                <li>Extended Beorn</li>
-                                <li>Less Ring</li>
-                                <li>No Dol Guldur</li>
-                                <li>Shortened Barrels</li>
-                                <li>Less Master and Legolas</li>
-                                <li>99% Less Tauriel and Alfrid</li>
-                            </ul>
-                        </div>
-                    </div>
-
-                    <!-- Fire and Water -->
-                    <div class="row chapter" id="chapter-fire-and-water">
-                        <div class="col-md-6 chapter-image">
-                            <img src="images/partImages/part_4__fire_and_water__poster.png" alt="Fire and Water">
-                        </div>
-                        <div class="col-md-6 chapter-items">
-                            <h3>Fire and Water</h3>
-                            <ul>
-                                <li>Runtime - 52:35</li>
-                                <li>No Dol Guldur</li>
-                                <li>No Golden Smaug</li>
-                                <li>Majorly Overhauled Smaug vs Laketown</li>
-                                <li>No fancy Black Arrow</li>
-                                <li>Secret Arkenstone</li>
-                                <li>Did I mention No Azog?</li>
-                            </ul>
-                        </div>
-                    </div>
-
-                    <!-- There and Back Again -->
-                    <div class="row chapter" id="chapter-there-and-back-again">
-                        <div class="col-md-6 chapter-image">
-                            <img src="images/partImages/part_5__there_and_back_again__poster.png" alt="There and Back Again">
-                        </div>
-                        <div class="col-md-6 chapter-items">
-                            <h3>There and Back Again</h3>
-                            <ul>
-                                <li>Runtime - 58:25 (+13:18 credits)</li>
-                                <li>Overhauled Battle</li>
-                                <li>Azog is Nameless</li>
-                                <li>Less Dragon-Sickness</li>
-                                <li>Modified Thorn vs Azog</li>
-                                <li>Modified Eagles</li>
-                                <li>Gandalf's deleted Eulogy reinstated</li>
-                                <li>Tweaked ending</li>
-                            </ul>
-                        </div>
-                    </div>
-                </section>
-
-                <section id="section-a-bit-about-us" class="row">
-                    <div class="col-md-6">
-                        <img src="images/about-us.webp" alt="A Bit About Us" class="w-100">
-                    </div>
-                    <div class="col-md-6 text-content">
+                    </section>
+    
+                    <!--A Shortcut To Mushrooms-->
+                    <section id="section-a-shortcut-to-mushrooms">
                         <hgroup>
-                            <h1>A Bit About Us</h1>
-                            <h2>Beyond Fandom</h2>
-                        </hgroup>    
-                        <p>
-                            Our mission at The Hobbit: The Battle of the Five Edits is to unite fans from around the world, creating a community of openness and enthusiasm. 
-                            Since 2000, we've been a valuable resource for fans, with important news and updates. We never rest on our laurels, and are always looking to 
-                            improve and expand our Film Fan Club offerings.
-                        </p>
-                    </div>
-                </section>
-
-                <section id="section-satisfaction-guaranteed" class="row">
-                    <div class="col-md-6 text-content">
-                        <hgroup>
-                            <h1>Satisfaction Guaranteed</h1>
-                        </hgroup>    
-                        <p>
-                            This is your Feature description. Write a short blurb explaining what the feature is and why it matters for visitors, customers or clients. 
-                            Don't be afraid to toot your own horn! Take this opportunity to emphasize the important benefits or key advantages.
-                        </p>
-                    </div>
-
-                    <div class="col-md-6">
-                        <img src="images/satisfaction-guaranteed.webp" alt="Satisfaction Guaranteed" class="w-100">
-                    </div>
-                </section>
-
-                <div id="copyright" class="row"></div>
-            </main>
+                            <h1 class="text-center">A Shortcut to Mushrooms</h1>
+                            <h2 class="text-center">⚠️ WARNING - CONTAINS SPOILERS ⚠️</h2>
+                        </hgroup>
+    
+                        <!-- An Unexpected Journey-->    
+                        <div class="d-flex chapter" id="chapter-an-unexpected-journey">
+                            <div class="col-md-6 chapter-image">
+                                <img src="images/partImages/part_1__an_unexpected_journey__poster.png" alt="An Unexpected Journey">
+                            </div>
+                            <div class="col-md-6 chapter-items">
+                                <h3>An Unexpected Journey</h3>
+                                <ul>
+                                    <li>Runtime - 53:29</li>
+                                    <li>No Prologue/Flashbacks</li>
+                                    <li>No Radagast</li>
+                                    <li>No Orc/Warg Chase</li>
+                                    <li>No Azog</li>
+                                </ul>
+                            </div>
+                        </div>
+    
+                        <!-- Riddles In The Dark-->
+                        <div class="d-flex chapter" id="chapter-riddles-in-the-dark">
+                            <div class="col-md-6 chapter-image">
+                                <img src="images/partImages/part_2__riddles_in_the_dark__poster.png" alt="Riddles in the Dark">
+                            </div>
+                            <div class="col-md-6 chapter-items">
+                                <h3>Riddles in the Dark</h3>
+                                <ul>
+                                    <li>Runtime - 52:42</li>
+                                    <li>Restructured Rivendell</li>
+                                    <li>No Saruman</li>
+                                    <li>No Storm Giants</li>
+                                    <li>Less Goblin-Tunnels</li>
+                                    <li>Minimal Songs</li>
+                                    <li>No Azog</li>
+                                </ul>
+                            </div>
+                        </div>
+    
+                        <!-- A Warm Welcome -->
+                        <div class="d-flex chapter" id="chapter-a-warm-welcome">
+                            <div class="col-md-6 chapter-image">
+                                <img src="images/partImages/part_3__a_warm_welcome__poster.png" alt="A Warm Welcome">
+                            </div>
+                            <div class="col-md-6 chapter-items">
+                                <h3>A Warm Welcome</h3>
+                                <ul>
+                                    <li>Runtime - 1:01:05</li>
+                                    <li>No Azog</li>
+                                    <li>Extended Beorn</li>
+                                    <li>Less Ring</li>
+                                    <li>No Dol Guldur</li>
+                                    <li>Shortened Barrels</li>
+                                    <li>Less Master and Legolas</li>
+                                    <li>99% Less Tauriel and Alfrid</li>
+                                </ul>
+                            </div>
+                        </div>
+    
+                        <!-- Fire and Water -->
+                        <div class="d-flex chapter" id="chapter-fire-and-water">
+                            <div class="col-md-6 chapter-image">
+                                <img src="images/partImages/part_4__fire_and_water__poster.png" alt="Fire and Water">
+                            </div>
+                            <div class="col-md-6 chapter-items">
+                                <h3>Fire and Water</h3>
+                                <ul>
+                                    <li>Runtime - 52:35</li>
+                                    <li>No Dol Guldur</li>
+                                    <li>No Golden Smaug</li>
+                                    <li>Majorly Overhauled Smaug vs Laketown</li>
+                                    <li>No fancy Black Arrow</li>
+                                    <li>Secret Arkenstone</li>
+                                    <li>Did I mention No Azog?</li>
+                                </ul>
+                            </div>
+                        </div>
+    
+                        <!-- There and Back Again -->
+                        <div class="d-flex chapter" id="chapter-there-and-back-again">
+                            <div class="col-md-6 chapter-image">
+                                <img src="images/partImages/part_5__there_and_back_again__poster.png" alt="There and Back Again">
+                            </div>
+                            <div class="col-md-6 chapter-items">
+                                <h3>There and Back Again</h3>
+                                <ul>
+                                    <li>Runtime - 58:25 (+13:18 credits)</li>
+                                    <li>Overhauled Battle</li>
+                                    <li>Azog is Nameless</li>
+                                    <li>Less Dragon-Sickness</li>
+                                    <li>Modified Thorn vs Azog</li>
+                                    <li>Modified Eagles</li>
+                                    <li>Gandalf's deleted Eulogy reinstated</li>
+                                    <li>Tweaked ending</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </section>
+    
+                    <!-- <section id="section-a-bit-about-us" class="row">
+                        <div class="col-md-6">
+                            <img src="images/about-us.webp" alt="A Bit About Us" class="w-100">
+                        </div>
+                        <div class="col-md-6 text-content">
+                            <hgroup>
+                                <h1>A Bit About Us</h1>
+                                <h2>Beyond Fandom</h2>
+                            </hgroup>    
+                            <p>
+                                Our mission at The Hobbit: The Battle of the Five Edits is to unite fans from around the world, creating a community of openness and enthusiasm. 
+                                Since 2000, we've been a valuable resource for fans, with important news and updates. We never rest on our laurels, and are always looking to 
+                                improve and expand our Film Fan Club offerings.
+                            </p>
+                        </div>
+                    </section>
+    
+                    <section id="section-satisfaction-guaranteed" class="row">
+                        <div class="col-md-6 text-content">
+                            <hgroup>
+                                <h1>Satisfaction Guaranteed</h1>
+                            </hgroup>    
+                            <p>
+                                This is your Feature description. Write a short blurb explaining what the feature is and why it matters for visitors, customers or clients. 
+                                Don't be afraid to toot your own horn! Take this opportunity to emphasize the important benefits or key advantages.
+                            </p>
+                        </div>
+    
+                        <div class="col-md-6">
+                            <img src="images/satisfaction-guaranteed.webp" alt="Satisfaction Guaranteed" class="w-100">
+                        </div>
+                    </section> -->
+    
+                    <section class="d-flex">
+                        <img src="images/FEOTY-2021-winner-Debut.jpg" alt="FEOTY 2021 Winner Debut" width="100%">
+                    </section>
+                    <section id="section-copyright" class="d-flex"></div>
+                </main>
+            </div>
         </div>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>

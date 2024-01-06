@@ -1,38 +1,73 @@
 :root {
-    --background-primary: #26282D;
-    --background-secondary: #1B1A21;
-    --background-three: #1E2025;
-    --flames: #ef4b1e;
-    --mainText: #fff;
+    --colorBackgroundPrimary: #E5DFCD;
+    --colorBackgroundSecondary: #d4cbae;
+    --colorBackgroundTertiary: #EDE9DD;
+    --colorLinkPrimary: #EF4B1E;
+    --colorLinkSecondary: #a03518;
+    --colorMainText: #433C2A;
+    --colorMainTextLight: #f3f3f3;
 }
 
 body {
     font-size: 1.25em;
-    background-color: var(--background-three);
-    color: var(--mainText);
+    background-color: var(--colorBackgroundTertiary);
+    color: var(--colorMainText);
 }
+
+a {
+    color: var(--colorLinkPrimary) !important;
+}
+    a:hover {
+        color: var(--colorLinkSecondary) !important;
+    }
 
 h2 {
     margin-bottom: 50px;
 }
 
 .btn-secondary {
-    background-color: var(--flames)!important;
-    border-color: var(--flames)!important;
+    background-color: var(--colorLinkPrimary)!important;
+    border-color: var(--colorLinkPrimary)!important;
 }
 
+#section-header {
+    background-image: url('images/Nov-2021-FEOTM-w-text-837x390-1.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 0;
+    padding-bottom: calc(100% * 390 / 837);
+    position: relative;
+}
+    #section-header hgroup {
+        position: absolute;
+        top: 20px;
+        left: 20px;
+        color: var(--colorMainTextLight);
+    }
 
-#nav-wrapper {
-    background-color: var(--background-three);
+
+#nav-primary {
+    background-color: var(--colorBackgroundTertiary);
     padding: 20px 10px;
+    height: 100vh;
+    position: sticky;
+    top: 0;
 }
 
 nav>ul>li {
-    margin: 0 10px;
+    margin-bottom: 20px;
+}
+
+.subnav {
+    margin-left: 30px;
+}
+
+.row {
+    padding: 20px !important;
 }
 
 .text-content {
-    padding: 20px;
+    /*padding: 20px;*/
 }
     .text-content hgroup {
         margin-bottom: 30px;
@@ -45,17 +80,18 @@ nav>ul>li {
     }
 
 section {
-    background-color: var(--background-secondary);
+    background-color: var(--colorBackgroundSecondary);
     margin-bottom: 50px;
-    padding: 25px;
-    scroll-margin: 160px;
+    padding: 20px;
 }
+    .narrow-margin {
+        margin-bottom: 10px;
+    }
 
 .chapter {
-    background-color: var(--background-primary);
+    background-color: var(--colorBackgroundPrimary);
     margin-bottom: 20px;
     padding: 20px;
-    scroll-margin: 100px;
 }
     .chapter-image img{
         height: 400px;
@@ -69,7 +105,7 @@ section {
     }
 
 #copyright.row {
-    background-color: var(--background-secondary);
+    background-color: var(--colorBackgroundSecondary);
     padding: 20px;
     justify-content: center;
 }
