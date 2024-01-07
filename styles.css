@@ -9,7 +9,6 @@
 }
 
 body {
-    font-size: 1.25em;
     background-color: var(--colorBackgroundTertiary);
     color: var(--colorMainText);
 }
@@ -67,7 +66,7 @@ nav>ul>li {
 }
 
 .text-content {
-    /*padding: 20px;*/
+    padding-right: 20px;
 }
     .text-content hgroup {
         margin-bottom: 30px;
@@ -88,20 +87,13 @@ section {
         margin-bottom: 10px;
     }
 
-.chapter {
+.episode, .inner-content {
     background-color: var(--colorBackgroundPrimary);
     margin-bottom: 20px;
     padding: 20px;
 }
-    .chapter-image img{
-        height: 400px;
-    }
-
-    .chapter-items {
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: column;
-        justify-content: center;
+    .episode-image img{
+        max-width: 100%;
     }
 
 #copyright.row {
