@@ -1,11 +1,11 @@
 :root {
-    --colorBackgroundPrimary: #E5DFCD;
-    --colorBackgroundSecondary: #d4cbae;
-    --colorBackgroundTertiary: #EDE9DD;
-    --colorLinkPrimary: #EF4B1E;
-    --colorLinkSecondary: #a03518;
-    --colorMainText: #433C2A;
-    --colorMainTextLight: #f3f3f3;
+    --colorBackgroundPrimary: #ECECEC;
+    --colorBackgroundSecondary: #626266;
+    --colorBackgroundTertiary: #413D3D;
+    --colorLinkPrimary: #F7F7F7;
+    --colorLinkSecondary: #d6d2d2;
+    --colorMainText: #F7F7F7;
+    --colorMainTextLight: #F7F7F7;
 }
 
 body {
@@ -22,6 +22,10 @@ a {
 
 h2 {
     margin-bottom: 50px;
+}
+
+h3 {
+    margin-bottom: 25px;
 }
 
 .btn-secondary {
@@ -91,6 +95,7 @@ section {
     background-color: var(--colorBackgroundPrimary);
     margin-bottom: 20px;
     padding: 20px;
+    color: var(--colorBackgroundTertiary);
 }
     .episode-image img{
         max-width: 100%;
