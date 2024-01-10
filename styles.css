@@ -52,9 +52,48 @@ h3 {
 #nav-primary {
     background-color: var(--colorBackgroundTertiary);
     padding: 20px 10px;
-    height: 100vh;
     position: sticky;
     top: 0;
+    width: 30%;
+}
+
+#content {
+    width: 70%;
+}
+
+#nav-toggle {
+    background: none;
+    border: 0;
+    color: white;
+    right: 25px;
+    top: 30px;
+    font-size: 2em;
+}
+
+@media screen and (max-width: 900px) {
+    #content {
+        width: 60%;
+    }
+
+    #nav-primary {
+        width: 40%;
+        position: static;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    #content {
+        width: 100%;
+    }
+
+    #nav-primary {
+        width: 100%;
+        display: none;
+    }
+
+    #wrapper {
+        flex-direction: column;
+    }
 }
 
 nav>ul>li {
@@ -99,6 +138,20 @@ section {
 }
     .episode-image img{
         max-width: 100%;
+    }
+
+    @media screen and (max-width: 992px) {
+        .episode-image {
+            margin-bottom: 20px;
+        }
+
+        .episode-image img {
+            width: 100%;
+        }
+    }
+
+    .episode-items {
+        padding-left: 10px;
     }
 
 #copyright.row {

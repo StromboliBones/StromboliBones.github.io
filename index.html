@@ -5,11 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body id="main" class="container-fluid">
-    <div class="d-flex" style="width: 80%;">
-        <nav class="col-md-2 d-md-block" id="nav-primary">
+    <div class="d-flex">
+        <button id="nav-toggle" class="d-md-none ms-auto">
+            <i class="bi bi-list"></i>
+        </button>
+    </div>
+    <div class="d-flex" id="wrapper">
+        <nav id="nav-primary">
             <ul class="nav flex-column">
                 <li class="nav-item">
                     <a href="#main" class="nav-link">Introduction</a>
@@ -38,6 +44,9 @@
                             <a href="#episode-summary-fire-and-water" class="nav-link">4. Fire and Water</a>
                         </li>
                         <li>
+                            <a href="#episode-summary-the-white-council" class="nav-link">4.5 The White Council</a>
+                        </li>
+                        <li>
                             <a href="#episode-summary-there-and-back-again" class="nav-link">5. There and Back Again</a>
                         </li>
                     </ul>
@@ -49,7 +58,7 @@
                 </li>
             </ul>
         </nav>
-        <div class="col-md-10">
+        <div id="content">
             <div class="d-flex">
                 <main class="col-md-12 ms-sm-auto" style="padding-top: 20px;">
                     <!-- Banner -->
@@ -61,13 +70,13 @@
                     </section>
 
                     <!-- Introduction -->
-                    <section id="section-intro" class="d-flex">
-                        <div class="col-md-6 text-content">
+                    <section id="section-intro" class="d-flex flex-lg-row flex-column">
+                        <div class="col-lg-6 col-12 text-content">
                             <p>The Hobbit: The Battle of the Five Edits is a reimagining of Peter Jackson's Film Trilogy.</p>
                             <p>A Five-Hour Miniseries that aims to remove the bloat contained within The Hobbit films and improve the quality of the viewer's experience.</p>
                             <p>Comprised of elements from many of the other Hobbit-Edits out there, as well as my own contributions to the content and structure of the original films, this edit represents Three Years, and thousands of hours of dedication to making The Hobbit films as enjoyable as possible, to as many people as possible.</p>
                         </div>
-                        <div class="col-md-6">
+                        <div class="col-lg-6 col-12 mt-3 mt-md-0">
                             <img src="images/front.jpg" alt="" class="w-100">
                         </div>
                     </section>
@@ -80,11 +89,11 @@
                         </hgroup>
     
                         <!-- An Unexpected Journey-->    
-                        <div class="episode d-flex" id="episode-summary-an-unexpected-journey">
-                            <div class="col-lg-5 col-md-12 episode-image">
+                        <div class="episode d-flex flex-lg-row flex-column" id="episode-summary-an-unexpected-journey">
+                            <div class="col-12 col-lg-4 col-xl-5 episode-image">
                                 <img src="images/partImages/part_1__an_unexpected_journey__poster.png" alt="An Unexpected Journey">
                             </div>
-                            <div class="col-lg-7 col-md-12 episode-items">
+                            <div class="col-12 col-lg-8 col-xl-7 episode-items">
                                 <h3>An Unexpected Journey</h3>
                                 <ul>
                                     <li>This episode retains 99% of its structure from the Anti-Cringe Cut (No Prologue, No Azog, No Radagast) except for a few small things:</li>
@@ -102,11 +111,11 @@
                         </div>
     
                         <!-- Riddles In The Dark-->
-                        <div class="episode d-flex" id="episode-summary-riddles-in-the-dark">
-                            <div class="col-lg-5 col-md-12 episode-image">
+                        <div class="episode d-flex flex-lg-row flex-column" id="episode-summary-riddles-in-the-dark">
+                            <div class="col-12 col-lg-4 col-xl-5 episode-image">
                                 <img src="images/partImages/part_2__riddles_in_the_dark__poster.png" alt="Riddles in the Dark">
                             </div>
-                            <div class="col-lg-7 col-md-12 episode-items">
+                            <div class="col-12 col-lg-8 col-xl-7 episode-items">
                                 <h3>Riddles in the Dark</h3>
                                 <ul>
                                     <li>This is where things start changing quite a bit from Anti-Cringe, starting with a few small continuity errors</li>
@@ -140,11 +149,11 @@
                         </div>
     
                         <!-- A Warm Welcome -->
-                        <div class="episode d-flex" id="episode-summary-a-warm-welcome">
-                            <div class="col-md-5 col-sm-12 episode-image">
+                        <div class="episode d-flex flex-lg-row flex-column" id="episode-summary-a-warm-welcome">
+                            <div class="col-12 col-lg-4 col-xl-5 episode-image">
                                 <img src="images/partImages/part_3__a_warm_welcome__poster.png" alt="A Warm Welcome">
                             </div>
-                            <div class="col-md-7 col-sm-12 episode-items">
+                            <div class="col-12 col-lg-8 col-xl-7 episode-items">
                                 <h3>A Warm Welcome</h3>
                                 <ul>
                                     <li>Episode now begins Post-Bree-Prologue</li>
@@ -176,11 +185,11 @@
                         </div>
     
                         <!-- Fire and Water -->
-                        <div class="episode d-flex" id="episode-summary-fire-and-water">
-                            <div class="col-lg-5 col-md-12 episode-image">
+                        <div class="episode d-flex flex-lg-row flex-column" id="episode-summary-fire-and-water">
+                            <div class="col-12 col-lg-4 col-xl-5 episode-image">
                                 <img src="images/partImages/part_4__fire_and_water__poster.png" alt="Fire and Water">
                             </div>
-                            <div class="col-lg-7 col-md-12 episode-items">
+                            <div class="col-12 col-lg-8 col-xl-7 episode-items">
                                 <h3>Fire and Water</h3>
                                 <ul>
                                     <li>I previously mimicked L8wrtr's version of the dwarves not giving up when they couldn't find the keyhole, then I tried Maple's, ended up with M4's.</li>
@@ -207,24 +216,39 @@
                                         </ol>
                                     </li>
                                     <li>
-                                        The White Council
+                                        NOTE: If you dislike this change, I have an Alternate Version of this episode where this change has been Reverted, alongside a couple other tweaks to make it work:
                                         <ul>
-                                            <li>This episode contains the entirety of the Dor Guldur subplot, much in the same way that Maple Films has his "Durin's Folk and the Hill of Sorcery" but mine won't include any flashbacks. It strictly follows Radagast and Gandalf as they investigate the High Fells and the Necromancer. It's intended to be watched only if you enjoy the Dor Guldur content and wish it had been left in!</li>
-                                            <li>Some digitally altered shots from TM2YC have been used, as well as how he handled the White Council meeting (Radagast gives Gandalf the Morgul blade in a flashback during the council meeting)</li>
-                                            <li>Using TM2YC's footage here allowed me to keep this episode as a standalone episode that also fits linearly in the timeline of the original 5 episodes, as he digitally removed the Company from the shots of Gandalf and Radagast talking in the woods that originally took place right after the Troll scenes.</li>
-                                            <li>This episode then butts up to episode 5 by showing Gandalf riding to Erebor.</li>
+                                            <li>This version of 5 begins with Gandalf returning to Dale. He then discusses the orcs, and tries to persuade Bard and Thranduil to give up on attacking the dwarves</li>
+                                            <li>The orcs are shown, and then we come back to Gandalf Bard and Thrandiul, whereupon Bilbo arrives in Dale and delivers the Arkenstone to attempt to prevent bloodshed</li>
+                                            <li>The rest of the episode is unchanged</li>
                                         </ul>
                                     </li>
                                 </ul>
                             </div>
                         </div>
+
+                        <!-- The White Council -->
+                        <div class="episode d-flex flex-lg-row flex-column" id="episode-summary-the-white-council">
+                            <div class="col-12 col-lg-4 col-xl-5 episode-image">
+                                <!-- <img src="images/partImages/part_4__fire_and_water__poster.png" alt="Fire and Water"> -->
+                            </div>
+                            <div class="col-12 col-lg-8 col-xl-7 episode-items">
+                                <h3>The White Council</h3>
+                                <ul>
+                                    <li>This episode contains the entirety of the Dor Guldur subplot, much in the same way that Maple Films has his "Durin's Folk and the Hill of Sorcery" but mine won't include any flashbacks. It strictly follows Radagast and Gandalf as they investigate the High Fells and the Necromancer. It's intended to be watched only if you enjoy the Dor Guldur content and wish it had been left in!</li>
+                                    <li>Some digitally altered shots from TM2YC have been used, as well as how he handled the White Council meeting (Radagast gives Gandalf the Morgul blade in a flashback during the council meeting)</li>
+                                    <li>Using TM2YC's footage here allowed me to keep this episode as a standalone episode that also fits linearly in the timeline of the original 5 episodes, as he digitally removed the Company from the shots of Gandalf and Radagast talking in the woods that originally took place right after the Troll scenes.</li>
+                                    <li>This episode then butts up to episode 5 by showing Gandalf riding to Erebor.</li>
+                                </ul>
+                            </div>
+                        </div>
     
                         <!-- There and Back Again -->
-                        <div class="episode d-flex" id="episode-summary-there-and-back-again">
-                            <div class="col-lg-5 col-md-12 episode-image">
+                        <div class="episode d-flex flex-lg-row flex-column" id="episode-summary-there-and-back-again">
+                            <div class="col-12 col-lg-4 col-xl-5 episode-image">
                                 <img src="images/partImages/part_5__there_and_back_again__poster.png" alt="There and Back Again">
                             </div>
-                            <div class="col-lg-7 col-md-12 episode-items">
+                            <div class="col-12 col-lg-8 col-xl-7 episode-items">
                                 <h3>There and Back Again</h3>
                                 <ul>
                                     <li>The large majority of the Battle occurs the way it does in Adam Dens's edit (silliness removed, worms removed, the usual stuff)</li>
@@ -276,6 +300,16 @@
         const copyrightElement = document.getElementById('section-copyright');
         const currentYear = new Date().getFullYear();
         copyrightElement.textContent = `© ${currentYear} The Hobbit: The Battle of the Five Edits`;
+
+        const navToggleElement = document.getElementById('nav-toggle');
+        navToggleElement.addEventListener('click', () => {
+            const navPrimaryElement = document.getElementById('nav-primary');
+            if (navPrimaryElement.style.display === "none") {
+                navPrimaryElement.style.display = "flex";
+            } else {
+                navPrimaryElement.style.display = "none";
+            }
+        });
     </script>
 </body>
 </html>
