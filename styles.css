@@ -55,6 +55,7 @@ h3 {
     position: sticky;
     top: 0;
     width: 30%;
+    height: 100vh;
 }
 
 #content {
