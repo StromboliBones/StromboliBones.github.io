@@ -61,12 +61,12 @@ h3 {
     padding: 20px 10px;
     position: sticky;
     top: 0;
-    width: 30%;
+    width: 20%;
     height: 100vh;
 }
 
 #content {
-    width: 70%;
+    width: 80%;
 }
 
 #nav-toggle {
